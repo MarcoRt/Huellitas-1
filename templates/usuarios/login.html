@@ -31,7 +31,7 @@
                         <p class="text-success text-center">&nbsp;</p>                     
                         <form method="post">
                             {% csrf_token %}
-                            {{ form }}
+                            {{ form.as_p }}
                             {% comment %} <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
